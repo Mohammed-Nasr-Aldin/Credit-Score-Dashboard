@@ -1,4 +1,5 @@
 import os
+import zipfile
 import joblib
 import pandas as pd
 import numpy as np
@@ -21,9 +22,21 @@ st.divider()
 # ==========================================
 @st.cache_resource
 def load_credit_model():
+    # 1. Automatically extract the model if not found and the zip file exists
+    if not os.path.exists("credit_model.pkl") and os.path.exists("credit_model.zip"):
+        with zipfile.ZipFile("credit_model.zip", "r") as zip_ref:
+            for file in zip_ref.namelist():
+                # Search for the model file and extract it directly to the root directory
+                if file.endswith("credit_model.pkl") or file.endswith("credit-model.pkl"):
+                    with open("credit_model.pkl", "wb") as f_out:
+                        f_out.write(zip_ref.read(file))
+                    break
+
+    # 2. Load the model once extracted
     if os.path.exists("credit_model.pkl"):
         loaded = joblib.load("credit_model.pkl")
         return loaded[0] if isinstance(loaded, (list, tuple)) else loaded
+
     return None
 
 @st.cache_resource
@@ -57,7 +70,7 @@ with tab_eda:
     st.header("📊 Exploratory Data Analysis (EDA)")
     st.write("Select any visualization below to inspect its distribution interactively.")
 
-    # Explicit dictionary of charts
+    # Explicit dictionary of charts with custom names
     chart_options = {
         "Chart 01: Credit Score Count (Target Distribution)": "credit1.pkl",
         "Chart 02: Numerical Distributions": "credit2.pkl",
