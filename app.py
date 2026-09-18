@@ -41,9 +41,13 @@ def load_credit_model():
 
 @st.cache_resource
 def load_figure(file_name):
-    if os.path.exists(file_name):
-        return joblib.load(file_name)
-    return None
+  if os.path.exists(file_name):
+    try:
+      return joblib.load(file_name)
+    except Exception as e:
+      st.error(f"⚠️ Could not render {file_name} due to Plotly version mismatch.")
+      return None
+  return None
 
 @st.cache_data
 def load_scaling_parameters():
