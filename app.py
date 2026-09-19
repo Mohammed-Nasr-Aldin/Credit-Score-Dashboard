@@ -108,7 +108,7 @@ with tab_eda:
                 if fig is not None:
                     st.subheader(name)
                     # Double height for Numerical Distribution or credit2.pkl
-                    is_extended = (file_path in ["credit2.pkl"] or "age" in name.lower())
+                    is_extended = (file_path in ["credit2.pkl"] or "numerical" in name.lower())
                     custom_height = 1200 if is_extended else 550
                     fig.update_layout(height=custom_height, autosize=True)
                     st.plotly_chart(fig, key=f"all_{file_path}", use_container_width=True)
@@ -118,7 +118,7 @@ with tab_eda:
             fig = load_figure(file_to_render)
             if fig is not None:
                 # Double height for Numerical Distribution or credi2.pkl
-                is_extended = (file_to_render in ["credit2.pkl"] or "age" in selected_chart_name.lower())
+                is_extended = (file_to_render in ["credit2.pkl"] or "numerical" in selected_chart_name.lower())
                 custom_height = 1300 if is_extended else 650
                 fig.update_layout(height=custom_height, autosize=True)
                 st.plotly_chart(fig, key=f"single_{file_to_render}", use_container_width=True)
