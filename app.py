@@ -107,7 +107,7 @@ with tab_eda:
                 fig = load_figure(file_path)
                 if fig is not None:
                     st.subheader(name)
-                    # Double height for Age Boxplot or credit2.pkl
+                    # Double height for Age Boxplot or credit3.pkl
                     is_extended = (file_path in ["credit3.pkl"] or "age" in name.lower())
                     custom_height = 1200 if is_extended else 550
                     fig.update_layout(height=custom_height, autosize=True)
@@ -117,8 +117,8 @@ with tab_eda:
         with st.spinner(f"⏳ Loading {selected_chart_name}... Please wait."):
             fig = load_figure(file_to_render)
             if fig is not None:
-                # Double height for Age Boxplot or credit2.pkl
-                is_extended = (file_to_render in ["credit2.pkl", "credit3.pkl"] or "age" in selected_chart_name.lower())
+                # Double height for Age Boxplot or credi3.pkl
+                is_extended = (file_to_render in ["credit3.pkl"] or "age" in selected_chart_name.lower())
                 custom_height = 1300 if is_extended else 650
                 fig.update_layout(height=custom_height, autosize=True)
                 st.plotly_chart(fig, key=f"single_{file_to_render}", use_container_width=True)
