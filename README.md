@@ -12,7 +12,7 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?logo=streamlit&logoColor=white)
 ![Plotly](https://img.shields.io/badge/Plotly-Charts-3F4F75?logo=plotly&logoColor=white)
 
-[**🚀 Open the Interactive dashboard**](https://creditscore-dashboard.streamlit.app/)
+[**🚀 Open the Interactive dashboard**](https://creditscore-dashboard.streamlit.app/) &nbsp;&nbsp;|&nbsp;&nbsp; [**📑 View Presentation Slides (PDF)**](credit-score-slides.pdf)
 
 </div>
 
@@ -22,6 +22,8 @@
 
 - [Overview](#-overview)
 - [Live Demo](#-live-demo)
+- [Presentation Slides](#-presentation-slides)
+- [![Presentation](https://img.shields.io/badge/Presentation-Slides%20(PDF)-EC1C24?logo=adobeacrobatreader&logoColor=white)](credit-score-slides.pdf)
 - [How to Use the Interactive Model](#-how-to-use-the-interactive-model)
 - [Dataset](#-dataset)
 - [Methodology](#-methodology)
@@ -78,6 +80,14 @@ The dashboard has three tabs:
 </div>
 
 > ℹ️ Free Streamlit apps go to sleep after a period of inactivity. If the page shows a "wake up" button, click it and wait a few seconds.
+
+---
+
+## 📊 Presentation Slides
+
+A comprehensive presentation summarizing the business problem, EDA findings, feature importance, and model evaluation is available directly in the repository:
+
+👉 [**Open Presentation Deck (`credit-score-slides.pdf`)**](credit-score-slides.pdf)
 
 ---
 
