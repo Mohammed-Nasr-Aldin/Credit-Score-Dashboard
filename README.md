@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="credit_score_gauge.png" width="380" alt="Credit score gauge: Poor, Fair, Good, Excellent">
+<img src="assets/credit_score_gauge.png" width="380" alt="Credit score gauge: Poor, Fair, Good, Excellent">
 
 # 💳 Credit Score Prediction Dashboard
 
@@ -71,7 +71,7 @@ The dashboard has three tabs:
 
 <div align="center">
 
-<img src="dashboard_prediction.png" width="100%" alt="Model Testing & Prediction tab of the Streamlit dashboard">
+<img src="assets/dashboard_prediction.png" width="100%" alt="Model Testing & Prediction tab of the Streamlit dashboard">
 
 <sub>The <b>Model Testing & Prediction</b> tab</sub>
 
@@ -330,6 +330,7 @@ The **Standard** class is the hardest to predict, since it sits between Good and
 ```
 Credit-Score-Dashboard/
 ├── app.py                      # Streamlit app (EDA, evaluation, interactive model)
+├── credit_score-dataset.zip    # Bank Credit Score Dataset
 ├── credit_model.zip            # Trained Random Forest model (extracted automatically on first run)
 ├── scaling_parameters.csv      # Min / Max of each numeric feature, used to scale user input
 ├── feature_importance.pkl      # Saved Plotly figure: feature importance
