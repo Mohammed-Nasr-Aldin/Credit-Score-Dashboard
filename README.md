@@ -23,7 +23,7 @@
 - [Overview](#-overview)
 - [Live Demo](#-live-demo)
 - [Presentation Slides](#-presentation-slides)
-  [![Presentation](https://img.shields.io/badge/Presentation-Slides%20(PDF)-EC1C24?logo=adobeacrobatreader&logoColor=white)](credit-score-slides.pdf)
+- [![Presentation](https://img.shields.io/badge/Presentation-Slides%20(PDF)-EC1C24?logo=adobeacrobatreader&logoColor=white)](credit-score-slides.pdf)
 - [How to Use the Interactive Model](#-how-to-use-the-interactive-model)
 - [Dataset](#-dataset)
 - [Methodology](#-methodology)
