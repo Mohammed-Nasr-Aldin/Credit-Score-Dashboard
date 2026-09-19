@@ -108,7 +108,7 @@ with tab_eda:
                 if fig is not None:
                     st.subheader(name)
                     # Double height for Age Boxplot or credit2.pkl
-                    is_extended = (file_path in ["credit2.pkl", "credit3.pkl"] or "age" in name.lower())
+                    is_extended = (file_path in ["credit3.pkl"] or "age" in name.lower())
                     custom_height = 1200 if is_extended else 550
                     fig.update_layout(height=custom_height, autosize=True)
                     st.plotly_chart(fig, key=f"all_{file_path}", use_container_width=True)
