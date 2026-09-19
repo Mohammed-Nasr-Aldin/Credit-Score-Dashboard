@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/credit_score_gauge.png" width="380" alt="Credit score gauge: Poor, Fair, Good, Excellent">
+<img src="credit_score_gauge.png" width="380" alt="Credit score gauge: Poor, Fair, Good, Excellent">
 
 # 💳 Credit Score Prediction Dashboard
 
@@ -12,7 +12,7 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-FF4B4B?logo=streamlit&logoColor=white)
 ![Plotly](https://img.shields.io/badge/Plotly-Charts-3F4F75?logo=plotly&logoColor=white)
 
-[**🚀 Open the live dashboard**](https://creditscore-dashboard.streamlit.app/)
+[**🚀 Open the Interactive dashboard**](https://creditscore-dashboard.streamlit.app/)
 
 </div>
 
