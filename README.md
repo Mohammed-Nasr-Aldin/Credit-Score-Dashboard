@@ -71,7 +71,7 @@ The dashboard has three tabs:
 
 <div align="center">
 
-<img src="assets/dashboard_prediction.png" width="100%" alt="Model Testing & Prediction tab of the Streamlit dashboard">
+<img src="dashboard_prediction.png" width="100%" alt="Model Testing & Prediction tab of the Streamlit dashboard">
 
 <sub>The <b>Model Testing & Prediction</b> tab</sub>
 
