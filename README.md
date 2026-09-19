@@ -332,6 +332,7 @@ Credit-Score-Dashboard/
 ├── app.py                      # Streamlit app (EDA, evaluation, interactive model)
 ├── credit_score-dataset.zip    # Bank Credit Score Dataset
 ├── credit_model.zip            # Trained Random Forest model (extracted automatically on first run)
+├── credit-score-slides.pdf     # Presentation Slides
 ├── scaling_parameters.csv      # Min / Max of each numeric feature, used to scale user input
 ├── feature_importance.pkl      # Saved Plotly figure: feature importance
 ├── credit1.pkl … credit22.pkl  # Saved Plotly figures (EDA charts and confusion matrices)
